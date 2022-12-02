@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>VehicleType</title>
+</head>
+<body style="background-image: url(https://www.gannett-cdn.com/-mm-/d2a691f1f64d8069f144791917ccdcf1e7d1fa16/c=0-0-1800-1015/local/-/media/USATODAY/test/2013/11/01/1383327500000-692-FreewaySlovenia.jpg?width=1800&height=1015&fit=crop&format=pjpg&auto=webp);  background-repeat: no-repeat;background-size: cover;">
+<div>
+ <form action="/vehicleType/${id}" method="post">
+ <table align="center">
+ <tr>
+ <td style="color: rgb(255, 0, 0);">dlno</td>
+ <td style="color:green;">password</td>
+ <td style="color: rgb(212, 0, 255);">vehicletype</td>
+ </tr>
+
+
+ <tr>
+
+ <td >  <input type="text" id="typePasswordX" class="form-control form-control-lg" name="dlno" value="${dlno}" readonly="readonly" style="color: rgb(72, 255, 0); position: relative;"/></td><br><br><br>
+ <td>   <input type="text" id="typePasswordX" class="form-control form-control-lg" name="pass" value="${pass}" readonly="readonly" style="color: rgb(0, 255, 64); position: relative;"/></td>
+ <td>  <select id = "vehicleList" name = "vehicleType" value="${vehicleType}" style="color: yellowgreen ; background-color: cyan; " >
+   <option value = "NONE">Select</option>
+   <option value = "2wheeler">2wheeler</option>
+   <option value = "3wheeler">3wheeler</option>
+   <option value = "4wheeler">4wheeler</option>
+</select> </td>
+ </tr>
+<td>
+ <!--<button type="button" class="btn btn-info">Info</button> -->
+<button class="btn btn-outline-light btn-lg px-500" type="submit" name="submit" value="submit">SUBMIT</button>
+<!--<button  class="btn btn-outline-green btn-lg px-500" type="submit" name="submit" value="submit">SUBMIT</button> -->
+</td>
+</table>					
+</form>
+</div>
+</body>
+</html>
